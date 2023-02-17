@@ -12,7 +12,7 @@
     color: black;
     text-align: center;
    }
-  #username{
+  .inputField{
     color: blue;
     text-align: center;
   }
@@ -22,6 +22,13 @@
 </head>
 <body>
   <p id="firstpara"><b>This was coool</b></p>
- <input type="text" id="Name" name="Name" placeholder="username" id="username">
+ <input class="inputField" type="text" id="Name" name="Name" placeholder="username">
+ <form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form>
 </body>
 </html>
